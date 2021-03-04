@@ -65,7 +65,7 @@ const App = () => {
         www.themoviedb.org API
       </footer>
 
-      {isLoaded == false && (
+      {isLoaded === false && (
         <div className="loading">
           <img src={LoadingGif} alt="loading" />
         </div>
