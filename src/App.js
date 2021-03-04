@@ -7,10 +7,13 @@ import FeaturedMovie from './components/FeaturedMovie';
 import tmdb from './Tmdb';
 import Header from './components/Header';
 
+import LoadingGif from './assets/Netflix_LoadTime.gif';
+
 const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
   const [blackHeader, setBlackHeader] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -22,11 +25,12 @@ const App = () => {
       let randomChosen = Math.floor(
         Math.random() * (originals[0].items.results.length - 1),
       );
-      let spotlighItem = originals[0].items.results[randomChosen];
-      console.log(spotlighItem);
+      let spotlightItem = originals[0].items.results[randomChosen];
+      console.log(spotlightItem);
 
-      let chosenInfo = await tmdb.getMovieInfo(spotlighItem.id, 'tv');
+      let chosenInfo = await tmdb.getMovieInfo(spotlightItem.id, 'tv');
       setFeaturedData(chosenInfo);
+      setIsLoaded(true);
     };
     loadAll();
   }, []);
@@ -61,12 +65,9 @@ const App = () => {
         www.themoviedb.org API
       </footer>
 
-      {movieList.length <= 0 && (
+      {isLoaded == false && (
         <div className="loading">
-          <img
-            src="http:///www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading.gif"
-            alt="loading"
-          />
+          <img src={LoadingGif} alt="loading" />
         </div>
       )}
     </div>
