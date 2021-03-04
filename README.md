@@ -1,6 +1,6 @@
 # Netflix Clone | Front-end
 
-![Project Image]('https://drscdn.500px.org/photo/1029274226/m%3D900/v2?sig=c4f46547ee9555ebba354831f2a106463ce9c3010c79f753245cc4c131cb2f35)
+![Project Image](https://drscdn.500px.org/photo/1029274226/m%3D900/v2?sig=c4f46547ee9555ebba354831f2a106463ce9c3010c79f753245cc4c131cb2f35)
 
 > This project is a simple Netflix Clone to present in my portfolio made with React 
 
