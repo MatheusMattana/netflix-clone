@@ -1,6 +1,6 @@
 # Netflix Clone | Front-end
 
-![Project Image](https://500px.com/photo/1029274226/netflixCloneScreenShot-by-Matheus-Mattana)
+(https://500px.com/photo/1029274226/netflixCloneScreenShot-by-Matheus-Mattana)
 
 > This project is a simple Netflix Clone to present in my portfolio made with React 
 
