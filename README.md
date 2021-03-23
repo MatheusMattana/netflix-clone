@@ -17,6 +17,7 @@ You can acess this on https://netflix-clone-henna.vercel.app/
 - CSS
 - Javascript
 - React
+- REST API
 
 ---
 
